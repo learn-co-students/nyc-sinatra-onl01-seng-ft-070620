@@ -11,7 +11,6 @@ class LandmarksController < ApplicationController
     
       post '/landmarks' do 
         landmark = Landmark.create(params[:figure])
-        landmark.save
         redirect "/landmarks"
       end
     
