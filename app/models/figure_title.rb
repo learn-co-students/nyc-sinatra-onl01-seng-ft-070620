@@ -1,3 +1,5 @@
+# this is the join table, each row belongs to a title and a figure
 class FigureTitle < ActiveRecord::Base
-  # add relationships here
+  belongs_to :figure
+  belongs_to :title
 end
